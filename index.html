@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" ng-app="directiveApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Directive App</title>
+</head>
+<body ng-controller="mainCtrl">
+
+<template-directive></template-directive>
+<div ng-repeat="p in pokemon">
+    {{p.name}}
+</div>
+
+<!--6/22 Build Angular App
+use template directive
+use functional directive
+use routing
+use $stateParams
+use $http
+Make this work
+<div ng-repeat="p in pokemon">
+  <template-directive poke=p>
+    {{p.name}}
+  </template-directive>
+</div>
+-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="service.js"></script>
+<script src="templateDirective.js"></script>
+<script src="functionalDirective.js"></script>
+</body>
+</html>
