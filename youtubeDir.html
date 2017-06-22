@@ -1,0 +1,16 @@
+<h1>This is Our Youtube Directive</h1>
+
+<button ng-click="getProducts()">Get Products</button>
+
+<div style="display: flex; flex-direction: row; flex-wrap: wrap;">
+  <div ng-repeat="product in products">
+    <div >
+      <img style="height: 200px;" ng-src="{{product.image}}"/>
+    </div>
+    <h4>{{product.title}}</h4>
+    <div>
+      <div>Description: {{product.desc}}</div>
+      <div>Price: ${{product.price}}</div>
+    </div>
+  </div>
+</div>

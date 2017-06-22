@@ -1,0 +1,12 @@
+<h1>This is the start of the Functional Directive</h1>
+
+From Original API Call
+Name: {{poke.name}}
+Url: {{poke.url}}
+
+From Another API Call
+Name: {{pokeInfo.forms[0].name}}
+<h3>STATS:</h3>
+<div ng-repeat="p in pokeInfo.stats">
+  <p>{{p.stat.name}}: {{p.base_stat}}</p>
+</div>

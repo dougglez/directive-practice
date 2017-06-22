@@ -8,6 +8,12 @@ angular.module('directiveApp').service('mainService', function($http) {
         })
   }
 
+  this.getOnePokemon = function(url) {
+    console.log('finding a pokemon');
+    return $http.get(url).then(function(responseFromAPI) {
+      return responseFromAPI.data;
+    })
+  }
 
 
 

@@ -9,10 +9,12 @@
 </head>
 <body ng-controller="mainCtrl">
 
-<template-directive></template-directive>
-<div ng-repeat="p in pokemon">
-    {{p.name}}
-</div>
+<!--<template-directive></template-directive>-->
+<!--<div ng-repeat="p in pokemon">-->
+<!--<functional-directive poke="p"></functional-directive>-->
+<!--</div>-->
+
+<youtube-dir></youtube-dir>
 
 <!--6/22 Build Angular App
 use template directive
@@ -35,5 +37,7 @@ Make this work
 <script src="service.js"></script>
 <script src="templateDirective.js"></script>
 <script src="functionalDirective.js"></script>
+<script src="youtubeDir.js"></script>
+<script src="youTubeService.js"></script>
 </body>
 </html>

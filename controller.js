@@ -8,5 +8,5 @@ angular.module('directiveApp').controller('mainCtrl', function($scope, mainServi
       console.log($scope.pokemon)
     })
   }
-  $scope.getPokemon();
+  // $scope.getPokemon();
 }) // end controller
